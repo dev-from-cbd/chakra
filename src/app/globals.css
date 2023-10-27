@@ -1,27 +1,33 @@
+/* Reset margins, padding, and box model for all elements */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  box-sizing: border-box; /* Use the border-box box model */
 }
 
+/* Apply styles to the 'body' element */
 body {
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: #000 !important; /* Set background color to black with importance */
+  color: #fff !important; /* Set text color to white with importance */
 }
 
-/* dark mode thin scroll bar */
+/* Define styles for webkit-based (Chrome, Safari) scrollbars */
+/* Set the width of the scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
+/* Define styles for the scrollbar track */
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #000; /* Set the track background color to black */
 }
 
+/* Define styles for the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #888; /* Set the thumb background color to gray */
 }
 
+/* Define styles for the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555; /* Change thumb background color to dark gray on hover */
 }
