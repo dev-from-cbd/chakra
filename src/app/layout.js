@@ -2,6 +2,7 @@
 import "./globals.css";
 // Import the 'Inter' font from Google Fonts using the 'next/font' package.
 import { Inter } from "next/font/google";
+import { Providers } from "./providers";
 
 // Define a variable 'inter' to load the 'Inter' font with a Latin character subset.
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
   return (
     // Start an HTML document with the language set to English.
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>Providers</Providers>
+      </body>
     </html>
   );
 }

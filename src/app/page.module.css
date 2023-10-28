@@ -22,20 +22,27 @@
   ); /* Use a monospace font family from a CSS variable */
 }
 
+/* Styles for links within the description */
 .description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 0.5rem; /* Add a 0.5rem (8px) gap between child elements */
 }
 
+/* Styles for paragraphs within the description */
 .description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  position: relative; /* Set the position property to relative */
+  margin: 0; /* Remove any margin around the paragraph */
+  padding: 1rem; /* Add 1rem (16px) padding to all sides */
+  background-color: rgba(
+    var(--callout-rgb),
+    0.5
+  ); /* Set the background color with transparency */
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3); /* Add a border with transparency */
+  border-radius: var(
+    --border-radius
+  ); /* Use a border radius from a CSS variable */
 }
 
 .code {
