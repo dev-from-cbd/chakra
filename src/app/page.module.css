@@ -1,21 +1,25 @@
+/* Styles for the main container */
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: space-between; /* Space evenly between children */
+  align-items: center; /* Center children horizontally */
+  padding: 6rem; /* Add 6rem (96px) padding to all sides */
+  min-height: 100vh; /* Ensure a minimum height of the viewport height */
 }
 
+/* Styles for the description */
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  display: inherit; /* Inherit the display property from the parent */
+  justify-content: inherit; /* Inherit the justify-content property */
+  align-items: inherit; /* Inherit the align-items property */
+  font-size: 0.85rem; /* Set the font size to 0.85rem */
+  max-width: var(--max-width); /* Set a maximum width using a CSS variable */
+  width: 100%; /* Take up the full width of the parent */
+  z-index: 2; /* Set the z-index to 2 for layering */
+  font-family: var(
+    --font-mono
+  ); /* Use a monospace font family from a CSS variable */
 }
 
 .description a {
@@ -97,7 +101,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
